@@ -1,0 +1,23 @@
+criando repositório no github
+
+git remote add origin <link>: registra o repositório no github
+
+git push -u origin main: sobe alterações p o github
+
+git remove -v: mostra se já existe um repositório remoto
+
+git pull origin main/master: faz download nas atualizações feitas no repositório do github
+
+para que outros usuários façam push no seu repositório, é preciso adicionar o usuário como colaborador do projeto
+
+git checkout -- . : volta todos os arquivos modificados para sua versão do último commit
+
+git revert <commit_id>: cria um commit desfazendo as ações no commit indicado
+
+git reset HEAD~<num>: remove os num commit anteriores feitos
+
+git config credential.helper store: salva as credenciais
+
+git config --unser credential.helper: remove as credenciais salvas
+
+git remote set-url origin <url>: força o git a usar o usuário passado como credencial

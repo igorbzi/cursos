@@ -1,0 +1,47 @@
+
+git config user.name <nome>: configura o nome do usuario
+
+git config user.email <email>: configura o email do usuario
+
+q - sair
+
+git init: adiciona o git no repositório
+
+git add <arquivo>: adiciona o arquivo para monitoramento
+
+git status: mostra os status dos arquivos no repositório
+
+git commit -m "<mensagem>": faz o commit para o repositório
+
+git log: mostra os dados dos commits
+    
+    --oneline: resume em uma linha
+    --since "X days/week/month ago": mostra o log dos commits desde a data
+    --before="YYYY-MM-DD": antes da data
+    --after="YYYY-MM-DD": depois da data
+      "X days/week/month ago" também pode ser usado
+    --author:"<nome>"
+
+
+
+git checkout <hash_id>: retorna no commit com id igual ao informado
+              <arquivo_atual>: caso for passado o nome do arquivo atual para o comando, o arquivo volta para o estado que estava no último commit
+
+git mv <nome_antigo> <nome_novo>: facilita a alteração do nome de arquivos
+
+git rm <arquivo>: facilita a remoção de arquivos
+
+git diff <comando>: mostra diferenças entre códigos
+    comandos:
+	--staged: staged para o último
+        <hash_id>: commit do hash para o último
+        <hash_id>..--staged/<hash_id>: entre os dois commit; o primeiro precisa ser mais antigo que o segundo
+
+
+git commit --amend -m <nova_mensagem>: esse commit substituirá o último commit feito
+
+git restore --staged <arquivo>: remove o arquivo de estágio
+
+git reset HEAD --hard: retorna todos os arquivos para o estado do último commit
+
+git reset HEAD^ --hard: apaga o último commit, e retorna ao anterior

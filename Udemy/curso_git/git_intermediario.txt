@@ -1,0 +1,47 @@
+
+branches (ramificação)
+
+git branch: exibe a branch atual
+-> atual é a sinalizada pelo *
+
+git branch <nome> : cria uma branch com o nome escrito
+
+git checkout <nome_da_branch>: entra na branch
+
+git branch -d <nome>: remove a branch que já passou pelo merge
+
+git branch -D <nome>: remove qualquer branch
+
+git checkout -b <nome> : cria branch nova e entra nela
+
+merge (fusão de branches):
+
+git merge <nome>: faz o merge da branch atual com a branch indicada
+
+git rebase <nome>: faz o rebase da branch indicada na branch atual
+
+clone:
+
+git clone <url/endereço>: clona o repositório para o diretório atual
+
+git push: envia as alterações para o repositório central, que foi clonado
+
+git fetch: usado para baixar arquivos de um repositório sem fazer o merge
+
+    git rebase: nesse caso, usado depois do fetch, para adicionar os arquivos baixados pelo git fetch na branch
+
+git pull: faz o que os dois comandos anteriores fazem
+
+bare repository:
+
+    git init --bare: cria um repositório bare, onde é possível realizar push
+
+tag: versão "estável" do código, branch que não recebe merges nem commits novos
+
+git tag: lista as tags
+
+git push origin <nome_da_tag>: cria a tag, origin se refere ao repositório de origem do clone
+
+git checkout <tag>: entra na tag, porém, apenas para visualização, sem possibilidade de adicionar alterações 
+
+git switch -c <nome_da_branch>: cria a nova branch a partir da tag
